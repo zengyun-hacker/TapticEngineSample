@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TapticEngineSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="S9G-bL-8wy">
+                                <rect key="frame" x="98.5" y="148.5" width="178" height="370.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taptic Engine 震动示例" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UY6-Mz-bET">
+                                        <rect key="frame" x="0.5" y="0.0" width="177" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srC-Pf-veI">
+                                        <rect key="frame" x="27.5" y="40.5" width="123" height="30"/>
+                                        <state key="normal" title="Section Feedback"/>
+                                        <connections>
+                                            <action selector="sectionFeedback:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nb9-yy-dLF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y60-s9-z7I">
+                                        <rect key="frame" x="6.5" y="90.5" width="165" height="30"/>
+                                        <state key="normal" title="Heavy Impact Feedback"/>
+                                        <connections>
+                                            <action selector="heavyImpactTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gNz-bK-Hl0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mz-jG-Reo">
+                                        <rect key="frame" x="0.0" y="140.5" width="178" height="30"/>
+                                        <state key="normal" title="Medium Impact Feedback"/>
+                                        <connections>
+                                            <action selector="mediumImpactTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kc8-5d-vBC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfd-db-1kh">
+                                        <rect key="frame" x="10.5" y="190.5" width="157" height="30"/>
+                                        <state key="normal" title="Light Impact Feedback"/>
+                                        <connections>
+                                            <action selector="lightImpactTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xiL-Pz-Fc7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaU-tk-VVc">
+                                        <rect key="frame" x="18.5" y="240.5" width="141" height="30"/>
+                                        <state key="normal" title="Notification Success"/>
+                                        <connections>
+                                            <action selector="notificationSuccessTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1B8-2j-YOd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3Z-LA-1qj">
+                                        <rect key="frame" x="25" y="290.5" width="128" height="30"/>
+                                        <state key="normal" title="Notification Failure"/>
+                                        <connections>
+                                            <action selector="notificationFailureTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mpw-gD-3iR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QwZ-zv-Zx1">
+                                        <rect key="frame" x="19" y="340.5" width="140" height="30"/>
+                                        <state key="normal" title="Notification Warning"/>
+                                        <connections>
+                                            <action selector="notificationWarningTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="geM-b7-mYu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="S9G-bL-8wy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gdu-vc-fDQ"/>
+                            <constraint firstItem="S9G-bL-8wy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pxb-ce-2ov"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
